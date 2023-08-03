@@ -4,6 +4,7 @@ const ProductList = (props) => {
 
   const productArr = props.productArr.products;
   const setProductArr = props.setProductArr;
+  const setProductId = props.setProductID;
 
   useEffect(() => {
     const getProducts = async () => {
@@ -18,8 +19,8 @@ const ProductList = (props) => {
   return (
     <>
       <h1>Product List</h1>
-      {productArr.map((product) => {
-        return <p id={product.id}>{product.title}</p>
+      {productArr?.map((product) => {
+        return <p id={product.id} onClick={() => setProductId(product.id)}>{product.title}</p>
       })}
     </>
   )
