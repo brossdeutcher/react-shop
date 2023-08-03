@@ -10,7 +10,7 @@ function App() {
 
   return (
     <>
-      <SingleProduct productId={productId} />
+      <SingleProduct productId={productId} setProductID={setProductID} />
       <ProductList productArr={productArr} setProductArr={setProductArr} setProductID={setProductID} />
     </>
   );

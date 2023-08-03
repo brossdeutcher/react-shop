@@ -14,7 +14,7 @@ const ProductList = (props) => {
     };
     getProducts();
   }, []);
-  console.log(productArr)
+
 
   return (
     <>
