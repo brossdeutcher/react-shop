@@ -4,7 +4,7 @@ const ProductList = (props) => {
 
   const productArr = props.productArr.products;
   const setProductArr = props.setProductArr;
-  const setProductId = props.setProductID;
+  const setProductId = props.setProductId;
 
   useEffect(() => {
     const getProducts = async () => {

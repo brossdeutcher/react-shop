@@ -37,7 +37,7 @@ const SingleProduct = (props) => {
           <td>${singleProduct.price}</td>
         </tr>
       </table>
-      <button onClick={() => setProductId(1)}>Back to List</button>
+      <button onClick={() => setProductId(null)}>Back to List</button>
     </>
   )
 }
